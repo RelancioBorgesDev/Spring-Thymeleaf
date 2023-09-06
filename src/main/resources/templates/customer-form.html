@@ -13,7 +13,7 @@
         <hr>
         <br>
 
-        <form th:action="@{/processForm}" th:object="customer" method="POST">
+        <form th:action="@{/processForm}" th:object="${customer}" method="POST">
             <label>First name: </label> <input type="text" th:field="*{firstName}"/>
             <br><br>
             <label>Last name: </label> <input type="text" th:field="*{lastName}"/>
